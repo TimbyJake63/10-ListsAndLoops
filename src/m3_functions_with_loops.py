@@ -1,5 +1,8 @@
+ingredients = ['Sugar', 'Apples', 'Beef', 'Grapes']
+for x in ingredients:
+    print(x)
 ###############################################################################
-# TODO: 1. (4 pts)
+# DONE: 1. (4 pts)
 #   
 #   Now, let's try to combine a few of the things we learned in previous
 #   exercises together. We are going to improve upon some of the loops that we
@@ -25,7 +28,15 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+def ingredient_search(ingredient, lst):
+    for x in lst:
+        if x == ingredient:
+            return True
+    return False
 
+print(ingredient_search('Beef', ingredients))
+print(ingredient_search('Chicken', ingredients))
+#Honestly was stumped for a while so I turned to chat GPT for help but I read everything it said so I could understand what code I was putting down.
 ###############################################################################
 # TODO: 1. (3 pts)
 #   
@@ -64,3 +75,10 @@
 #   
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+def triangle(size):
+    for x in range(1, size + 1):
+        print('*' * x)
+
+
+triangle(10)
+#Had everything down but couldn't figure out how to have it start at 1 instead of 0. Used Chat GPT but yet again I had it explain everything to me before I put it down
